@@ -19,19 +19,35 @@
     <!-- tailwind cdn -->
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+     <!-- css links -->
+      <link rel="stylesheet" href="styles/style.css">
 
-    <style>
-      /* google fonts */
-      .noto-serif {
-        font-family: "Noto Serif", serif;
-      }
-      .inter {
-        font-family: "Inter", sans-serif;
-      }
-    </style>
+ 
   </head>
   <body>
-    <header></header>
+    <header>
+        <nav>
+            <img src="./assets/logo.png" alt="Company Logo">
+            <ul class="inter">
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">About us </a></li>
+                <li><a href=""> <i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner-container">
+            <div class="banner-left">
+                <h1 class="banner-title">ALWAYS  <span class="color-primary">FRESH <br> FLOWERS</span> </h1>
+                <p class="description">
+                    Indulge your senses with the bea uty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
+                </p>
+            </div>
+            <div class="banner-right">
+                <img src="./assets/hero-flower.png" alt="">
+            </div>
+        </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
