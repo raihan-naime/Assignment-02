@@ -343,6 +343,9 @@ footer .image-container {
   }
 
   /* join section */
+  /* .join-section{
+    margin-top: 200px;
+  } */
   .join-section div {
     width: 400px;
   }
@@ -363,12 +366,12 @@ footer .image-container {
 
   /* deal section */
   .offer-card-container{
-    /* flex-direction: column; */
-    display: block;
+    flex-direction: column;
+    height: 1100px;
   }
   .deal-section-left{
+    height: 772px;
     width: 100%;
   }
-
   }
 
