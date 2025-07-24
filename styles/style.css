@@ -367,10 +367,10 @@ footer .image-container {
   /* deal section */
   .offer-card-container{
     flex-direction: column;
-    height: 1100px;
+    height: 1095px;
   }
   .deal-section-left{
-    height: 772px;
+    height: 720px;
     width: 100%;
   }
   }
