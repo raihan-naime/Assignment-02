@@ -4,7 +4,8 @@
   padding: 0; */
 }
 header,
-main {
+main, 
+footer {
   max-width: 1140px;
   /* border: 2px solid green; */
   margin: 0 auto;
@@ -41,6 +42,11 @@ li a:hover {
   font-weight: 700;
   color: #000000;
 }
+ nav ul li, footer ul li {
+  list-style: none;
+}
+
+
 
 /* header styles */
 nav {
@@ -52,9 +58,7 @@ nav ul {
   display: flex;
   gap: 45px;
 }
-nav ul li {
-  list-style: none;
-}
+
 li a {
   text-decoration: none;
   color: hsla(0, 0%, 0%, 0.5);
@@ -146,11 +150,74 @@ li a {
   position: absolute;
   height: 286px;
   width: 286px;
-  /* left: 497px; */
-  /* right: 2000px; */
   left: 400px;
   top: -150px;
 }
+
+/* Join Section styles */
+.join-section {
+  background-image: url("../assets/news-letter-bg.png");
+  height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join-section div {
+  width: 1130px;
+  text-align: center;
+}
+.join-section h2 {
+  color: white;
+  margin-bottom: 25px;
+}
+.join-section input {
+  width: 80%;
+  height: 50px;
+  border: none;
+  padding-right: 0px;
+  padding-left: 20px;
+}
+.btn-subscribe {
+  height: 50px;
+  font-weight: 600;
+  margin-left: -5px;
+  width: 160px;
+  border: none;
+  color: white;
+  background-color: #e95a08;
+}
+
+/* footer styles */
+footer{
+  margin: 50px auto;
+  color: #6B7280;
+  display: flex;
+  justify-content: space-between;
+}
+footer div{
+  max-width: 360px;
+}
+footer ul{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+footer  .image-container{
+  display: flex;
+  gap: 24px;
+}
+.image-container img{
+  width: 36px;
+  height: 36px;
+}
+
+
+
+
+
 
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
@@ -160,7 +227,7 @@ li a {
   main section {
     margin: 50px 0;
   }
-  .section-title{
+  .section-title {
     font-size: 1.5rem;
   }
   .hidden {
@@ -177,7 +244,6 @@ li a {
   }
   .banner-right {
     width: 100%;
-    /* border: 2px solid rebeccapurple; */
   }
   .banner-right img {
     width: 100%;
@@ -202,5 +268,24 @@ li a {
   .plants-lover-section {
     flex-direction: column;
     gap: 10px;
+  }
+
+  /* join section */
+  .join-section div {
+    width: 400px;
+  }
+  .join-section input{
+    width: 50%;
+  }
+  .btn-subscribe{
+    width: 100px;
+  }
+  footer{
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  footer ul{
+    padding-left: 0;
   }
 }
