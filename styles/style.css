@@ -4,7 +4,7 @@
   padding: 0; */
 }
 header,
-main, 
+main,
 footer {
   max-width: 1140px;
   /* border: 2px solid green; */
@@ -42,11 +42,10 @@ li a:hover {
   font-weight: 700;
   color: #000000;
 }
- nav ul li, footer ul li {
+nav ul li,
+footer ul li {
   list-style: none;
 }
-
-
 
 /* header styles */
 nav {
@@ -154,6 +153,84 @@ li a {
   top: -150px;
 }
 
+/* deal section styles */
+.deal-section {
+  text-align: center;
+}
+.deal-section p {
+  max-width: 885px;
+  margin: 20px auto;
+}
+.offer-card-container {
+  display: flex;
+  gap: 1.75rem;
+  height: 425px;
+  color: white;
+}
+
+.deal-section-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 30%;
+}
+.deal-section-left .top-card {
+  background-image: url("../assets/deal-bloom.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  flex: 1;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deal-section-left .bottom-card {
+  background-image: url("../assets/deal-ana.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  flex: 1;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deal-section-left h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.offer-card-container a {
+  color: white;
+  font-weight: 600;
+  margin-top: 0;
+}
+.deal-section-right {
+  flex: 1;
+  background-image: url("../assets/deal-zabo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  flex: 1;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deal-section-right h4{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.deal-section-right a{
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+
+
 /* Join Section styles */
 .join-section {
   background-image: url("../assets/news-letter-bg.png");
@@ -191,33 +268,28 @@ li a {
 }
 
 /* footer styles */
-footer{
+footer {
   margin: 50px auto;
-  color: #6B7280;
+  color: #6b7280;
   display: flex;
   justify-content: space-between;
 }
-footer div{
+footer div {
   max-width: 360px;
 }
-footer ul{
+footer ul {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
-footer  .image-container{
+footer .image-container {
   display: flex;
   gap: 24px;
 }
-.image-container img{
+.image-container img {
   width: 36px;
   height: 36px;
 }
-
-
-
-
-
 
 /* responsive for mobile devices */
 @media screen and (max-width: 576px) {
@@ -274,18 +346,29 @@ footer  .image-container{
   .join-section div {
     width: 400px;
   }
-  .join-section input{
+  .join-section input {
     width: 50%;
   }
-  .btn-subscribe{
+  .btn-subscribe {
     width: 100px;
   }
-  footer{
+  footer {
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 20px;
   }
-  footer ul{
+  footer ul {
     padding-left: 0;
   }
-}
+
+  /* deal section */
+  .offer-card-container{
+    /* flex-direction: column; */
+    display: block;
+  }
+  .deal-section-left{
+    width: 100%;
+  }
+
+  }
+
