@@ -11,7 +11,7 @@ footer {
   margin: 0 auto;
 }
 main section {
-  margin: 200px 0;
+  margin: 100px 0;
 }
 
 /* google fonts */
@@ -159,7 +159,7 @@ li a {
 }
 .deal-section p {
   max-width: 885px;
-  margin: 20px auto;
+  margin: 20px auto 70px auto;
 }
 .offer-card-container {
   display: flex;
