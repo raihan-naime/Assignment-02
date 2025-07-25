@@ -72,6 +72,9 @@ li a {
 .banner-left {
   flex: 1;
 }
+.banner-left p{
+  margin-bottom: 0;
+}
 .banner-right {
   flex: 1;
 }
